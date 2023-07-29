@@ -2,6 +2,8 @@ import streamlit as st
 import start, questions, stop, summary
 from st_pages import add_page_title
 
+from Backend import get_audio
+
 st.set_page_config(page_title="ALSA Meets", page_icon="🏠")
 
 
@@ -16,11 +18,11 @@ def home():
     if start_btn:
         start.main()
     if summary_btn:
-        main_summary = summary.main()
+        get_audio.is_summary = True
     if questions_btn:
-        main_questions = questions.main()
+        get_audio.is_question = True
     if stop_btn:
-        stop.main()
+        get_audio.is_stop = True
 
 
 home()
