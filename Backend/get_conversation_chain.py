@@ -8,6 +8,7 @@ llm = OpenAI()
 
 
 def get_conversation_chain_home(vectorstore):
+    """This function takes the vectorstore and makes a conversation chain for it"""
     conversation_chain = ConversationalRetrievalChain.from_llm(
         llm=llm,
         retriever=vectorstore.as_retriever()
@@ -17,6 +18,7 @@ def get_conversation_chain_home(vectorstore):
 
 
 def get_conversation_chain_meetings(vectorstore):
+    """This function takes the vectorstore and makes a conversation chain for it"""
     memory = ConversationBufferMemory(
         memory_key='chat_history',
         return_messages=True
