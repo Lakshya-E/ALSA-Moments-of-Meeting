@@ -4,10 +4,10 @@ from st_pages import Page, show_pages
 
 st.write(css, unsafe_allow_html=True)
 
-if "conversation" not in st.session_state:
-    st.session_state.conversation = None
-if "chat_history" not in st.session_state:
-    st.session_state.chat_history = None
+# if "conversation" not in st.session_state:
+#     st.session_state.conversation = None
+# if "chat_history" not in st.session_state:
+#     st.session_state.chat_history = None
 
 with st.echo("below"):
     show_pages(
