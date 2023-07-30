@@ -1,10 +1,8 @@
-import threading
-import streamlit as st
-from Backend import main_process
 from Backend import get_audio
 
 
-def main(frames):
-    print("Generating final audio...")
-    audio = get_audio.save_audio_to_wav(frames)
+def main(audio, frames):
+    """This function takes audio frames and returns final audio"""
+    audio_file = get_audio.save_audio_to_wav(audio, frames)
     print("Generated audio file for further processing \n\n")
+    print("storing frames in db")

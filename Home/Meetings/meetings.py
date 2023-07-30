@@ -1,10 +1,13 @@
+"""This is the meetings page for streamlit meetings button"""
 import streamlit as st
 # from user_conversations import answer_user_question
-from Frontend.htmlTemplate import  css, bot_template, user_template
+from Frontend.htmlTemplate import css, bot_template, user_template
 from st_pages import add_page_title
+
 
 def meeting_ended(frames):
     pass
+
 
 st.write(css, unsafe_allow_html=True)
 add_page_title()
