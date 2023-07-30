@@ -9,8 +9,7 @@ def main_process_home(audio, question):
     print(raw_text)
     text_chunks = get_chunks.get_chunks(raw_text)
     print(text_chunks)
-    vector_store = get_vectorstore.embed_n_vectorstore(text_chunks)
-    get_answers.answer_user_question_home(question)
+    chroma_store = get_vectorstore.chroma_embed(text_chunks)
     return "response"
 
 
