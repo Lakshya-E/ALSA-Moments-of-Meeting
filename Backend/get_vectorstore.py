@@ -1,17 +1,19 @@
-from langchain.embeddings import HuggingFaceInstructEmbeddings
+# from langchain.embeddings import HuggingFaceInstructEmbeddings
 from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
-import chroma
+from langchain.vectorstores import FAISS, Chroma
 
 
+def chroma_vector_store(chunks):
+    """
+    This function embeds the given chunks using specified
+    embedding model and stores in vector database and returns
+    the retriever
+    """
+    embeddings = OpenAIEmbeddings()
+    db = Chroma.from_texts(chunks, embeddings)
 
-def chroma_embed(chunks):
-    collection = client.create_collection(name="my_collection", embedding_function=emb_fn)
-
-    collection.add(
-        documents=chunks,
-    )
-    return client
+    retriever = db.as_retriever(search_type="similarity", search_kwargs={"k": 2})
+    return retriever
 
 
 def embed_n_vectorstore(chunks):

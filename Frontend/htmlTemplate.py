@@ -18,6 +18,9 @@ css = '''
 .chat-msg .message{
     width: 85%; padding: 0 1.5rem; color: #fff;
 }
+.chat-msg h1{
+    text-align: center;
+}
 </style>
 '''
 
@@ -39,3 +42,16 @@ user_template = '''
 </div>
 '''
 
+summary_template = '''
+<div class="chat-msg user">
+    <h1>Summary</h1>
+    <div class="message">{{MSG}}</div>
+</div>
+'''
+
+question_template = '''
+<div class="chat-msg bot">
+    <h1>Summary</h1>
+    <div class="message">{{MSG}}</div>
+</div>
+'''

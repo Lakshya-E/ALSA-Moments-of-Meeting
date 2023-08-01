@@ -1,6 +1,8 @@
 """This is the home page for streamlit home button"""
 import streamlit as st
+# from streamlit
 from Backend import get_audio
+from threading import Thread
 
 st.set_page_config(page_title="ALSA Meets", page_icon="🏠")
 
@@ -14,7 +16,8 @@ stop_btn = st.button("Stop")
 if start_btn:
     print("********************************")
     print("Start button clicked")
-    get_audio.record()
+
+    record_thread = Thread(target=get_audio.record())
 
 if summary_btn:
     print("summary button clicked")
@@ -22,6 +25,7 @@ if summary_btn:
 
 if questions_btn:
     print("questions button clicked")
+    st.write("gref")
     get_audio.is_question = True
 
 if stop_btn:
