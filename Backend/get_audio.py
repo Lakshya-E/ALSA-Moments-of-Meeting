@@ -1,4 +1,6 @@
 """In this file we work with audio recording in the background"""
+import time
+from threading import Thread
 import pyaudio
 import wave
 import io
@@ -16,6 +18,9 @@ is_stop = False
     sound_file.writeframes(b''.join(tmp_frame))
     sound_file.close()
     print("saving wav file")"""
+
+with open("data.txt", "r") as f:
+    text = f.read().replace('\n', '')
 
 
 def save_audio_to_wav(audio, frame):
@@ -44,27 +49,28 @@ def record():
         if is_summary:
             print("------------------------------------------------")
             print("Entering is_summary loop  to get audio")
-            summary.main(audio, frames)
-            # output_file_path = "summary.wav"
-            # test_audio(audio, frames, output_file_path)
-            print("------------------------------------------------ \n\n")
             is_summary = False
+            # summary_thread = Thread(target=summary.main, args=[audio, frames])
+            summary_thread = Thread(target=summary.main, args=[text])
+            summary_thread.start()
+            frames = []
+            print("------------------------------------------------ \n\n")
+
         elif is_question:
             print("------------------------------------------------")
             print("Entering is_question loop to get audio")
-            questions.main(audio, frames)
-            # output_file_path = "questions.wav"
-            # test_audio(audio, frames, output_file_path)
-            print("------------------------------------------------ \n\n")
             is_question = False
+            question_thread = Thread(target=questions.main, args=[audio, frames])
+            frames = []
+            print("------------------------------------------------ \n\n")
+
         elif is_stop:
             print("------------------------------------------------")
             print("Entering is_stop loop to get audio")
-            stop.main(audio, frames)
-            # output_file_path = "stop.wav"
-            # test_audio(audio, frames, output_file_path)
-            print("------------------------------------------------ \n\n")
             is_stop = False
+            stop.main(audio, frames)
+            frames = []
+            print("------------------------------------------------ \n\n")
             break
 
     stream.stop_stream()
