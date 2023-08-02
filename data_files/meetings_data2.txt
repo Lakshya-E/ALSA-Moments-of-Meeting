@@ -1,0 +1,73 @@
+Introduction
+Blockchain technology is the most discussed topic at present on different forums in the world. Many of us might be familiar with this topic and its details, but there are many among us who would have heard the name of this topic for the first time. It is an interesting topic and we will be discussing Blockchain, its working, origin, types, pros and cons and future scope in the essay provided below.
+
+What is meant by Blockchain?
+
+Blockchain in simple terms is regarded as the record-keeping technology and has been popular after the advent of Bitcoin. This technology is also linked with banking and investment firms. The information regarding different transactions and details of credit and debit are noted down by us and are termed as records. This is the procedure of maintaining the records manually and the manual records are stated as the ledger. The process of maintaining the record of information and data in form of databases that are stored electronically on the computer system is called Blockchain. It can also be regarded as a digital ledger.
+
+Blockchain is the system of recording and storing information in such a way that it cannot be edited or hacked. Every computer connected to this system has access to the data and information recorded in the Blockchain. It is not managed and controlled by any single person or authority but is decentralized. Thus, the technology is also stated as the distributed ledger system.
+
+Origin of Blockchain Technology
+
+The idea of the protocol of Blockchain at first was suggested by Cryptographer David Chaum in the year 1982. He proposed this idea in his dissertation work on “Computer Systems Established, Maintained, and Trusted by Mutually Suspicious Groups”. Stuart Haber and W. Scott Stornetta were first to start working on the concept of blockchain in the year 1991.  Later there were many attempts made to carry forward this concept.
+
+The concept of Blockchain came into reality in the year 2008 and the credit for inventing this technology goes to Satoshi Nakamoto. He named this technology Block and Chain i.e. it was of two words in his original paper but later the technology was named Blockchain a single word in the year 2016. This technology came into existence after the advent of cryptocurrency called Bitcoin. Nakamoto wanted to create a Bitcoin ledger as a decentralized system that can easily be assessed by the people connected to the system.
+
+How Blockchain Works?
+
+The information is stored in different blocks that are linked in a sequence and thus this technology is termed Blockchain. Every block in the Blockchain has a limited storage capacity for storing data and information. The blocks, after becoming full with the information, are linked with the other blocks and the information starts being stored in the new blocks.
+The Blockchain is made up of different blocks containing information. Every block in the Blockchain has its own data, cryptographic hash that is unique to every block and the hash of the previous block.
+The hash of the previous block present in every block helps in linking the blocks together to form a Blockchain. The only block that does not have any hash of the previous block is the genesis block. It is formed initially and thus does not have any hash of previous blocks.
+Any attempt to edit data and information stored in blocks results in changing the hash of the block. Thus, change in the hash of one block lead to changes in other linked blocks too. In this way, the change can be easily detected. This causes disruption of data of all blocks in a Blockchain.
+The Blockchain can be assessed by different people linked to this system. The people connected to this system through their computers are termed nodes. Miners among them are the people who are connected to this system and verify the information that is newly added to the blocks. Thereafter, the data is noted and stored in the blocks.
+The information stored in the Blockchain can easily be assessed by the computers linked in the network but the privacy of the data will be maintained throughout this process.
+The information in Blockchain is updated after every ten minutes interval.
+
+Attributes of Blockchain
+
+There are certain features that are specific to the Blockchain technology and are enlisted below:
+
+A Decentralized Technology- The records of the several transactions and information can be made in excel sheets on computers but there is a difference in the collection of information in Blockchain. The information stored in different blocks in a Blockchain is not only managed by a single person or authority. Every user in the network has a copy of the information on their computers and thus no modification can be made by anyone.
+No Need for Third-Party- There is no any need for a third party to be involved in any kind of interaction between two parties. The interaction and transactions can easily be done by using Blockchain technology.
+Change of Data in the Blocks is Impossible- Any kind of change in the data stored in the blocks is impossible. It is because the change in data of one block results in changing the hash of all subsequent blocks. Therefore, the change in the data stored in the blocks is nearly impossible.
+Change Can Be Detected Easily- The attempt to change information in the blocks can easily be detected by the other users in the network.
+Classification of Blockchain Technology
+
+The Blockchain technology network can be broadly be classified into four types of networks and that are stated below:
+
+Public Blockchain- The public Blockchain is a chain of information that has no restrictions for its access. Any user in the network needs no permission to access the history of Blockchain or carry out any kind of transaction. The information can easily be transferred and accessed by people all around the world on this type of network of Blockchain without any prior permission. Bitcoin Blockchain is an example of a public blockchain.
+Private Blockchain- This type of Blockchain network needs permission for accessing the information. This type of Blockchain network cannot be joined by anyone without the permission of the owner. The digital ledger in this type of Blockchain is shared among only the trusted members. This type of network is usually managed by different organizations and enterprises.
+Hybrid Blockchain- This type of Blockchain network refers to the mixture of the attributes of both centralized and decentralized blockchains. The working of the hybrid blockchain depends upon the percentage of centralization and decentralization.
+Sidechains- This is the network of blockchain that executes parallel to the primary blockchain. The side chains work independently from the primary blockchain.
+Need of Blockchain
+
+The advent of the internet and different technologies has resulted in several digital technologies in the world. Blockchain is a new and emerging concept in society but is becoming popular at a very fast pace. Earlier when there was no such technology the records and information were noted and maintained in the written format by the people. There was a maximum chance of errors when the data was noted manually. Moreover, the data and information could easily be edited easily that later gave rise to corruption.
+
+There is a dire need for a technology like a blockchain that will ensure the security of the recorded data with full transparency. This will also help in gaining the trust of people and they can access the information in the blocks without any kind of fear of cheating.  The copy of the transaction is available on all the computers linked with the blockchain network and this validates the security of the transactions. This technology is preferred by the banks for the process of money transfers, storing records, and different technical works.
+
+Benefits of Blockchain
+
+The blockchain enables us in getting accurate data on which people can easily rely upon. The private records in blockchains will only be shared with the members of the network who have been granted access by us.
+The transactions that are recorded in the blocks cannot be altered by anybody and any change can easily be detected by the users in the network. This states that this technology is very secure.
+The use of blockchain technology helps in the removal of third-party involvement in transaction and record-keeping processes. There will be no extra charge incurred for the transactions by blockchain technology.
+The data and information can be saved without wasting unwanted time and effort thus blockchain is an efficient technology.
+Limitations of Blockchain Technology
+
+The verification of transactions in blockchain requires huge power or electricity.
+The private key in the blockchain secures Bitcoins and thus it must be kept secret. The knowledge of the private key to the third party means revealing about the Bitcoins to them. Thus, it is necessary to protect these keys from becoming exposed to third parties. These keys if once lost cannot be backed up and money secured in them also gets lost.
+The records and transactions in the blockchains are distributed ledger i.e. it is present on every computer of every user in the network. Any transaction without verification of all the members cannot be entered into the blocks. The verification of the transaction from a large number of users requires time and thus it is a time taking process. This results in a lowering of the transaction speed.
+How is Blockchain Essential for Operating Bitcoin?
+
+Bitcoin is a digital currency and it is managed by the Blockchain. There is no authority that is meant for operating the crypto currencies. The transaction of every Bitcoin is stored in the blockchains. Further, the options of the digital currency are distributed on the computers in the network. This facilitates the operating of Bitcoins without the involvement of any kind of central authority. The data of the transactions of Bitcoins are stored in the blocks of the blockchain. This is a risk-free and secure option for operating Bitcoin.
+
+Blockchain Wallet- This is a digital or E-wallet service that is provided by the blockchain company. It enables the users of the blockchain network to store and manage, transfer, and trade cryptocurrencies. The wallet s well provided with the security features that help in reducing the chances of online fraud and thefts.
+
+Applications of Blockchain Technology
+
+Development of Smart Contacts- Different parties signs contract or agreement for the exchange of services and products in businesses. This happens mainly on paper that is mainly prone to different types of errors and frauds. The development of new technology called smart contacts in blockchains ease this work and help it in making it more secure. This technology performs everything exactly like that takes place on paper. The difference is only that it is digital and can be executed by the user. Moreover, there is no risk of editing data in the blockchain. Thus smart contact can be used for carrying out different financial agreements, storing property documents, crowdfunding, healthcare transactions, etc. Every detail from manufacturing to delivery in the process of exchange of products is maintained by the smart contract.
+Voting and Elections-The process of elections in the nation are carried out manually and thus there are maximum chances of occurrence of errors. The news of some frauds in the elections is very common during the elections in the nation. The introduction of smart contact if introduced in the system of voting and election might reduce the chances of the occurrence of such errors and frauds. This will also help in conducting free and fair elections in the nation.
+Reduce the Chance of Cyber Crimes- The chances of cybercrime are very common nowadays with the fast pace of digitalization. Many people every now and ten are becoming the victim of cyber frauds because while doing online transactions the details are stolen by the hackers. Blockchain technology helps in digitizing the documents that can facilitate the users in doing online transactions and interactions.
+Prevent Copying of Original Contents- The information and articles on different topics are available easily on the websites. This information is many times copied and used by people without the permission of the author of the article. Blockchain technology facilitates the authors to prevent the copyright of their written articles by registering their work online in smart contracts with full privacy. There will be no chances of editing or copying the work of the authors and the authority of the content will be totally restricted in the hands of the owner.
+Conclusion
+
+Blockchain is an emerging technology and its use at present is limited only to the crypto currency. This technology is also said to be useful in different sectors in the coming future. It is being tested for the same in different sectors in several countries of the world. It is brought into use in the banking and commerce sectors in different countries. This technology is becoming popular at a very fast pace and there are many fields where it can bring revolutionary changes. The advent of such technology is dire of need in coming future. I have tried to explain the blockchain in a very simple way in form of a long essay. I hope that you will find it interesting and love reading about this new technology.

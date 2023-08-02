@@ -1,10 +1,23 @@
 from Backend import get_audio
 from Backend import main_process
-import streamlit as st
+from threading import Thread
+from streamlit.runtime.scriptrunner import get_script_run_ctx, add_script_run_ctx
 
 
-def main(audio, frames):
+def main(text):
     """This function takes audio frames and returns questions"""
-    audio_file = get_audio.save_audio_to_wav(audio, frames)
-    summary_main = main_process.main_process_home(audio_file, "create some questions from the context")
-    st.write(summary_main)
+    question_main = Thread(target=main_process.main_process_home,
+                           args=[text, "create some questions from the context"]
+                           )
+    add_script_run_ctx(question_main)
+    question_main.start()
+
+
+# def main(audio, frames):
+#     """This function takes audio frames and returns questions"""
+#     audio_file = get_audio.save_audio_to_wav(audio, frames)
+#     questions_main = Thread(target=main_process.main_process_home,
+#                             args=[audio_file, "create some questions from the context"]
+#                             )
+#     add_script_run_ctx(questions_main)
+#     questions_main.start()
