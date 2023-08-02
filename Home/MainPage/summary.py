@@ -12,7 +12,8 @@ def main(text):
     """This function takes audio frames and returns summary"""
     summary_main = Thread(target=main_process.main_process_home,
                           args=[text,
-                                "give the whole context, with every major points discussed"
+                                "give the whole context, with every major points discussed",
+                                "summary"
                                 ]
                           )
     add_script_run_ctx(summary_main)
@@ -24,7 +25,8 @@ def main(text):
 #     audio_file = get_audio.save_audio_to_wav(audio, frames)
 #     summary_main = Thread(target=main_process.main_process_home,
 #                           args=[audio_file,
-#                                 "give the whole summary of the context, with every major points discussed"
+#                                 "give the whole summary of the context, with every major points discussed",
+#                                 "summary"
 #                                 ]
 #                           )
 #     add_script_run_ctx(summary_main)

@@ -1,10 +1,11 @@
 """In this file we work with audio recording in the background"""
-import time
+import streamlit as st
 from threading import Thread
 import pyaudio
 import wave
 import io
 from Home.MainPage import summary, questions, stop
+from streamlit.runtime.scriptrunner import add_script_run_ctx
 
 is_summary = False
 is_question = False
@@ -27,7 +28,7 @@ def save_audio_to_wav(audio, frame):
 
 
 def record():
-    print("opening audio and stream to start recording...\n")
+    print("*****opening audio and stream to start recording*****\n")
     audio = pyaudio.PyAudio()
     stream = audio.open(format=pyaudio.paInt16, channels=1, rate=44100, input=True, frames_per_buffer=1024)
     frames = []
@@ -44,23 +45,31 @@ def record():
             is_summary = False
             # summary_thread = Thread(target=summary.main, args=[audio, frames])
             summary_thread = Thread(target=summary.main, args=[text])
+            add_script_run_ctx(summary_thread)
             summary_thread.start()
 
-        elif is_question:
+        if is_question:
             print("*****Entering is_question loop to get audio*****\n\n")
             is_question = False
             # question_thread = Thread(target=questions.main, args=[audio, frames])
             question_thread = Thread(target=questions.main, args=[text])
+            add_script_run_ctx(question_thread)
             question_thread.start()
 
-        elif is_stop:
+        if is_stop:
             print("*****Entering is_stop loop to get audio*****\n\n")
             is_stop = False
-            stop.main(audio, frames)
+            if 'value_question' in st.session_state:
+                del st.session_state['value_question']
+            if 'value_summary' in st.session_state:
+                del st.session_state['value_summary']
+
+            stop_thread = Thread(target=stop.main, args=[audio, frames])
+            add_script_run_ctx(stop_thread)
+            stop_thread.start()
             break
 
     stream.stop_stream()
     stream.close()
     audio.terminate()
-    print("Recording stopped! \n")
-    print("################################## \n\n")
+    print("*****Recording stopped!*****\n")

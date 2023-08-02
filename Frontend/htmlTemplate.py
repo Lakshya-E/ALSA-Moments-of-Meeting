@@ -3,6 +3,12 @@ css = '''
 .chat-msg{
     padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1rem; display: flex;
 }
+.response-msg{
+    padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1rem; background-color: #475063;
+}
+.response-msg h1{
+    margin: 0; padding: 0
+}
 .chat-msg.bot{
     background-color: #475063;
 }
@@ -17,6 +23,9 @@ css = '''
 }
 .chat-msg .message{
     width: 85%; padding: 0 1.5rem; color: #fff;
+}
+.response{
+    font-size: 16px
 }
 .chat-msg h1{
     text-align: center;
@@ -43,15 +52,17 @@ user_template = '''
 '''
 
 summary_template = '''
-<div class="chat-msg user">
+<div class="response-msg">
     <h1>Summary</h1>
-    <div class="message">{{MSG}}</div>
+    <hr>
+    <div class="message response">{{MSG}}</div>
 </div>
 '''
 
 question_template = '''
-<div class="chat-msg bot">
-    <h1>Summary</h1>
-    <div class="message">{{MSG}}</div>
+<div class="response-msg">
+    <h1>Questions</h1>
+    <hr>
+    <div class="message response">{{MSG}}</div>
 </div>
 '''
